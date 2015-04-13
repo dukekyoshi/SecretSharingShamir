@@ -13,7 +13,7 @@ public class QuestionsGenerator {
     private String filename;
     private ArrayList<String> questions;
 
-    QuestionsGenerator(String file) {
+    public QuestionsGenerator(String file) {
         filename = file;
         questions = new ArrayList<String>();
     }

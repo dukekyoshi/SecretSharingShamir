@@ -25,7 +25,8 @@ public class Main {
         System.out.print("k: ");
         int k = sc.nextInt();
 
-        int[] function = split(12,k);
+        int secret = (int)(Math.random() * 50);
+        int[] function = split(secret,k);
         
         Function fcount = new Function(function);
         int[] fx = new int[n+1];
@@ -58,7 +59,7 @@ public class Main {
             solution[i] = sc.nextDouble();
         }
         EquationSolver es = new EquationSolver(equation, solution);
-        int secret = (int)es.solve()[0];
+        secret = (int)es.solve()[0];
         System.out.println("secret: " + secret);
 
         sc.close();
